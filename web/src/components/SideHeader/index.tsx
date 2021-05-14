@@ -4,7 +4,9 @@ import "./styles.scss";
 export default function SideHeader() {
   return (
     <div className="side-header">
-      <IoSearch className="side-header-icon" size={30} />
+      <div className="icon-container circle-head">
+        <IoSearch className="side-header-icon" size={30} />
+      </div>
     </div>
   );
 }
