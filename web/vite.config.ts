@@ -5,10 +5,21 @@ export default defineConfig({
   plugins: [reactRefresh()],
   resolve: {
     alias: [
-      { find: "scss", replacement: path.resolve(__dirname, "src/assets/scss") },
+      {
+        find: "@colors",
+        replacement: path.resolve(__dirname, "src/assets/scss/_colors.scss"),
+      },
       {
         find: "@containers",
         replacement: path.resolve(__dirname, "src/containers"),
+      },
+      {
+        find: "@components",
+        replacement: path.resolve(__dirname, "src/components"),
+      },
+      {
+        find: "@images",
+        replacement: path.resolve(__dirname, "src/images"),
       },
     ],
   },
