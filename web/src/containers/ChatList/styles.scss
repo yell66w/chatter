@@ -1,4 +1,7 @@
 @import "@colors";
 .chat-list {
-  background-color: $aqua200;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
