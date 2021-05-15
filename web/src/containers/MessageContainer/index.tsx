@@ -6,9 +6,11 @@ import "./styles.scss";
 const MessageContainer: React.FC = () => {
   return (
     <div className="message-container">
-      <MessageHeader />
-      <MessageContent />
-      <MessageInputBar />
+      <div className="message-wrapper">
+        <MessageHeader />
+        <MessageContent />
+        <MessageInputBar />
+      </div>
     </div>
   );
 };

@@ -1,7 +1,10 @@
 @import "@colors";
 .chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   img {
     object-fit: cover;
-    border-radius: 2rem;
+    border-radius: 0.8rem;
   }
 }

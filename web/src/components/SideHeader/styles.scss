@@ -11,7 +11,7 @@
   position: absolute;
   width: 3.5rem;
   height: 0.1rem;
-  background-color: $grey200;
+  background-color: $grey100;
   bottom: 0;
   border-radius: 3rem;
 }
@@ -19,9 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $primary;
-  border-radius: 100%;
+  background-color: white;
+  border-radius: 0.8rem;
 }
 .side-header-icon {
-  color: white;
+  color: $primary;
 }
