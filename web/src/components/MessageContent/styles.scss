@@ -1,4 +1,12 @@
 @import "@colors";
 .message-content-container {
   flex: 12;
+  overflow: auto;
+}
+.message-content-container::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.message-content-container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 1rem;
 }

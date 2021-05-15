@@ -1,20 +1,50 @@
 @import "@colors";
 .chat-item {
   display: flex;
-  align-items: center;
+  gap: 0.8rem;
   padding: 0.5rem;
   cursor: pointer;
   border-radius: 0.8rem;
+  align-items: center;
+  &:hover {
+    background-color: $dark100;
+    opacity: 0.85;
+  }
+  &:focus {
+    background-color: $dark100;
+  }
   img {
     object-fit: cover;
     border-radius: 100%;
   }
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $grey300;
-  }
-  a {
-    background-color: $cyan200;
+  .chat-info-container {
+    display: flex;
+    flex-direction: column;
+    h1,
+    .chat-text {
+      font-weight: normal;
+      width: 15rem;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: white;
+      line-height: 1.3rem;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+    .chat-text {
+      opacity: 0.6;
+    }
+    .chat-text-container {
+      display: flex;
+      align-items: center;
+      span {
+        color: white;
+        font-size: 0.8rem;
+        flex: 1;
+      }
+    }
   }
 }

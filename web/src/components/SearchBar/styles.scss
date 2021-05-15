@@ -4,7 +4,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 .search-bar-input {
   display: flex;
@@ -18,7 +18,7 @@
 .search-bar-input::placeholder {
   color: $grey300;
   font-family: "Roboto";
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.01rem;
 }
 .search-bar-icon {
   position: absolute;

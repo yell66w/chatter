@@ -10,6 +10,7 @@ body {
   flex-direction: row;
   height: 100vh;
   letter-spacing: 0.05rem;
+  overflow-y: hidden;
 }
 ul {
   margin: 0;
@@ -21,4 +22,7 @@ p {
   margin: 0;
   padding: 0;
   color: $dark200;
+}
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,27 @@
+@import "@colors";
+.message-bubble {
+  display: flex;
+  padding: 0.5rem 1rem;
+  img {
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 100%;
+  }
+}
+.bubble-container {
+  h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    span {
+      font-size: 0.8rem;
+      font-weight: normal;
+      color: $grey200;
+    }
+  }
+}
+.bubble-text-container {
+  margin-top: 0.2rem;
+}
+.bubble-text {
+  font-size: 1rem;
+}

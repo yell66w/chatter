@@ -3,17 +3,19 @@
   position: relative;
   display: flex;
   padding: 0.8rem;
+  align-items: center;
+  justify-content: center;
 }
-.side-header::after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  height: 0.1rem;
-  background-color: $grey100;
-  bottom: 0;
-  left: 2rem;
-  border-radius: 3rem;
-}
+// .side-header::after {
+//   content: "";
+//   position: absolute;
+//   width: 90%;
+//   height: 0.1rem;
+//   background-color: $grey100;
+//   bottom: 0;
+//   left: 1rem;
+//   border-radius: 3rem;
+// }
 .icon-container {
   display: flex;
   align-items: center;

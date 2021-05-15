@@ -3,13 +3,48 @@ import ChatItem from "@components/ChatItem";
 import "./styles.scss";
 const ChatList: React.FC = () => {
   return (
-    <ul className="chat-list">
+    <div className="chat-list">
       <ChatItem />
       <ChatItem />
       <ChatItem />
       <ChatItem />
       <ChatItem />
-    </ul>
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+      <ChatItem />
+    </div>
   );
 };
 
