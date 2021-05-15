@@ -4,7 +4,9 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  :first-child {
+    margin-top: auto !important;
+  }
 }
 .message-content-container::-webkit-scrollbar {
   width: 0.5rem;
