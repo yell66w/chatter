@@ -8,10 +8,17 @@ body {
 .app {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  height: 100vh;
+  letter-spacing: 0.05rem;
 }
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  color: $dark200;
 }
