@@ -2,6 +2,9 @@
 .message-content-container {
   flex: 12;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .message-content-container::-webkit-scrollbar {
   width: 0.5rem;
