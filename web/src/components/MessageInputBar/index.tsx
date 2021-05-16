@@ -1,29 +1,25 @@
-import React, { ChangeEvent, KeyboardEvent } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import { IoAddCircle, IoImage } from "react-icons/io5";
+import React from "react";
+import { IoAddCircle } from "react-icons/io5";
 import { IoMdImage } from "react-icons/io";
+import { HiEmojiHappy } from "react-icons/hi";
 import "./styles.scss";
 import TextareaAutosize from "react-textarea-autosize";
 export default function MessageInputBar() {
   return (
     <div className="message-input-container">
-      <div className="message-input-box">
-        <div className="message-tabs">
-          <IoAddCircle size={25} />
-          <IoMdImage size={23} />
-        </div>
-        <div className="message-textarea">
-          <TextareaAutosize
-            placeholder="Message @ryantillaman"
-            className="message-input"
-            maxRows={6}
-          />
-          {/* <textarea
-            placeholder="Message @ryantillaman"
-            className="message-input"
-          /> */}
-        </div>
+      <div className="message-actions message-actions-left">
+        <IoAddCircle size={24} />
+        <IoMdImage size={24} />
+      </div>
+      <div className="message-composer">
+        <TextareaAutosize
+          className="textareaAutosize"
+          maxRows={6}
+          placeholder="Message @ryantillaman"
+        />
+      </div>
+      <div className="message-actions message-actions-right">
+        <HiEmojiHappy size={24} />
       </div>
     </div>
   );
