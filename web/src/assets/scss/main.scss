@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap");
 @import "@colors";
 @import "variables";
 body {
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Poppins";
 }
 .app {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  letter-spacing: 0.05rem;
+  // letter-spacing: 0.05rem;
   overflow-y: hidden;
 }
 ul {
@@ -25,4 +26,19 @@ p {
 }
 a {
   text-decoration: none;
+}
+textarea {
+  border: none;
+  font-family: "Poppins";
+  outline: none;
+  overflow-y: auto;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 1rem;
 }

@@ -1,5 +1,31 @@
 @import "@colors";
 .message-input-container {
-  flex: 1;
-  background-color: $grey50;
+  width: 100%;
+  align-self: center;
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+}
+.message-input-box {
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  padding: 0.5rem 1rem;
+  display: flex;
+  width: 95%;
+  max-height: 10rem;
+  margin-bottom: 1rem;
+  flex-direction: row;
+}
+
+.message-tabs {
+  margin-right: 0.5rem;
+  display: flex;
+}
+.message-textarea {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .message-input {
+    flex: 1;
+  }
 }
