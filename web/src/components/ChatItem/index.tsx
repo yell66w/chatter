@@ -1,8 +1,9 @@
 import React from "react";
 import "./styles.scss";
+import { Link } from "react-router-dom";
 export default function ChatItem() {
   return (
-    <a className="chat-item" href="#">
+    <Link to="/m/1003" className="chat-item">
       <img
         className="square-icon"
         src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -25,6 +26,6 @@ export default function ChatItem() {
           <span>2d</span>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }

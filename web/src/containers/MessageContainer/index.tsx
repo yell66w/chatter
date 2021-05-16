@@ -1,17 +1,24 @@
 import MessageContent from "@components/MessageContent";
 import MessageHeader from "@components/MessageHeader";
 import MessageInputBar from "@components/MessageInputBar";
+import { Switch, Route } from "react-router-dom";
 import React from "react";
 import "./styles.scss";
-const MessageContainer: React.FC = () => {
+interface Props {
+  id: string;
+}
+const MessageContainer = ({ id }: Props) => {
   return (
-    <div className="message-container">
-      <div className="message-wrapper">
-        <MessageHeader />
-        <MessageContent />
-        <MessageInputBar />
+    <Route path="/m">
+      <div className="message-container">
+        <div className="message-wrapper">
+          <div>{id}</div>
+          <MessageHeader />
+          <MessageContent />
+          <MessageInputBar />
+        </div>
       </div>
-    </div>
+    </Route>
   );
 };
 
