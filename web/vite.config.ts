@@ -33,6 +33,10 @@ export default defineConfig({
         find: "@graphql-util",
         replacement: path.resolve(__dirname, "src/utils/graphql"),
       },
+      {
+        find: "@context",
+        replacement: path.resolve(__dirname, "src/context"),
+      },
     ],
   },
 });
