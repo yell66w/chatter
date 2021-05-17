@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { UserContext } from "@context/UserContext";
+import { UserContext } from "@context/User/UserContext";
 export const UserProvider: React.FC = ({ children }) => {
   const [currentUser, setCurrentUser] = useState({
     displayName: "",
@@ -7,17 +7,9 @@ export const UserProvider: React.FC = ({ children }) => {
     id: "",
     createdAt: "",
   });
-  const login = (
-    id: string,
-    displayName: string,
-    email: string,
-    createdAt: string
-  ) => {
-    setCurrentUser({ id, createdAt, displayName, email });
-  };
 
   return (
-    <UserContext.Provider value={{ currentUser, login }}>
+    <UserContext.Provider value={{ currentUser, setCurrentUser }}>
       {children}
     </UserContext.Provider>
   );

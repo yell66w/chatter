@@ -4,7 +4,7 @@ import "./assets/scss/main.scss";
 import App from "./App";
 import { ApolloProvider } from "@apollo/client/react";
 import { client } from "@graphql-util/apolloClient";
-import { UserProvider } from "@context/UserProvider";
+import { UserProvider } from "@context/User/UserProvider";
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>

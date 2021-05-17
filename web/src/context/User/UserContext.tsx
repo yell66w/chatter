@@ -7,10 +7,10 @@ export const UserContext = createContext({
     id: "",
     createdAt: "",
   },
-  login: (
-    id: string,
-    displayName: string,
-    email: string,
-    createdAt: string
-  ) => {},
+  setCurrentUser: ({}: {
+    displayName: string;
+    email: string;
+    id: string;
+    createdAt: string;
+  }) => {},
 });
