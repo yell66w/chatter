@@ -18,6 +18,10 @@ export default defineConfig({
         replacement: path.resolve(__dirname, "src/components"),
       },
       {
+        find: "@pages",
+        replacement: path.resolve(__dirname, "src/pages"),
+      },
+      {
         find: "@images",
         replacement: path.resolve(__dirname, "src/images"),
       },
