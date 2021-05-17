@@ -8,7 +8,8 @@
       "@images/*": ["./assets/images/*"],
       "@utils/*": ["./utils/*"],
       "@graphql-util/*": ["./utils/graphql/*"],
-      "@context/*": ["./context/*"]
+      "@context/*": ["./context/*"],
+      "@hooks/*": ["./hooks/*"]
     },
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
