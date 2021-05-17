@@ -1,8 +1,15 @@
+import { useMutation } from "@apollo/client";
 import React from "react";
+import { LOGIN } from "./mutation";
 
 const Login = () => {
-  const onLoginHandler = () => {
-    console.log("login");
+  const [login] = useMutation(LOGIN);
+  const onLoginHandler = async () => {
+    const res = await login({
+      variables: { email: "george@gmail.com", password: "george123" },
+    });
+    const token = res.data.login.token;
+    localStorage.setItem("token", token);
   };
   return (
     <div>

@@ -25,6 +25,14 @@ export default defineConfig({
         find: "@images",
         replacement: path.resolve(__dirname, "src/images"),
       },
+      {
+        find: "@utils",
+        replacement: path.resolve(__dirname, "src/utils/"),
+      },
+      {
+        find: "@graphql-util",
+        replacement: path.resolve(__dirname, "src/utils/graphql"),
+      },
     ],
   },
 });

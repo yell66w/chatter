@@ -5,7 +5,9 @@
       "@containers/*": ["./containers/*"],
       "@components/*": ["./components/*"],
       "@pages/*": ["./pages/*"],
-      "@images/*": ["./assets/images/*"]
+      "@images/*": ["./assets/images/*"],
+      "@utils/*": ["./utils/*"],
+      "@graphql-util/*": ["./utils/graphql/*"]
     },
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
