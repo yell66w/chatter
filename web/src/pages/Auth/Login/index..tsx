@@ -9,7 +9,7 @@ const Login = ({}) => {
   let { from }: any = location.state || { from: { pathname: "/" } };
   const onLoginHandler = async () => {
     console.log("loggin you in...");
-    auth.signin({ email: "george@gmail.com", password: "george123" }, () => {
+    auth.signin({ email: "ryan@gmail.com", password: "ryan123" }, () => {
       history.replace(from);
     });
   };

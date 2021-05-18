@@ -23,12 +23,14 @@ function useProvideAuth() {
   useEffect(() => {
     if (data) {
       const userInfo = data.getAuthUser;
-      setUser({
-        name: userInfo.name,
-        createdAt: userInfo.createdAt,
-        email: userInfo.email,
-        id: userInfo.id,
-      });
+      if (userInfo) {
+        setUser({
+          name: userInfo.name,
+          createdAt: userInfo.createdAt,
+          email: userInfo.email,
+          id: userInfo.id,
+        });
+      }
     }
   }, [data]);
 
