@@ -1,6 +1,4 @@
 import React from "react";
-import { useMutation } from "@apollo/client";
-import { LOGIN } from "./mutation";
 import { useHistory, useLocation } from "react-router-dom";
 import { useAuth } from "@context/User/UserProvider";
 

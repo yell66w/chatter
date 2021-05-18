@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "@pages/Home";
 import Login from "@pages/Auth/Login/index.";
@@ -9,13 +9,13 @@ const App: React.FC = () => {
     <Router>
       <div className="app">
         <Switch>
-          <Route exact path="/login">
+          <PrivateRoute isAuthRoute={true} path="/login">
             <Login />
-          </Route>
-          <Route exact path="/register">
+          </PrivateRoute>
+          <PrivateRoute isAuthRoute={true} path="/register">
             <Register />
-          </Route>
-          <PrivateRoute path="/">
+          </PrivateRoute>
+          <PrivateRoute isAuthRoute={false} path="/">
             <Home />
           </PrivateRoute>
         </Switch>
