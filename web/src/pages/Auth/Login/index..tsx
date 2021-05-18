@@ -1,15 +1,19 @@
 import React from "react";
 import { useMutation } from "@apollo/client";
 import { LOGIN } from "./mutation";
+import { useHistory, useLocation } from "react-router-dom";
+import { useAuth } from "@context/User/UserProvider";
 
 const Login = ({}) => {
-  const [login] = useMutation(LOGIN);
+  let history = useHistory();
+  let location = useLocation();
+  let auth = useAuth();
+  let { from }: any = location.state || { from: { pathname: "/" } };
   const onLoginHandler = async () => {
-    const res = await login({
-      variables: { email: "george@gmail.com", password: "george123" },
+    console.log("loggin you in...");
+    auth.signin({ email: "george@gmail.com", password: "george123" }, () => {
+      history.replace(from);
     });
-    const token = res.data.login.token;
-    localStorage.setItem("token", token);
   };
   return (
     <div>
